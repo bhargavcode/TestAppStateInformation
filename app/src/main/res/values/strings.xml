@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestApp2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="state_dashboard_label">State Dashboard</string>
+    <string name="state_details_label">Details of %s</string>
+    <string name="show_details">View Complete Details</string>
+    <string name="previous">Previous</string>
+    <string name="please_enter_state_name">Search by entering name</string>
+    <string name="state_name">State Name:</string>
+    <string name="state_over_all_population">State over all population:</string>
+    <string name="number_of_counties">Number of counties:</string>
+    <string name="no_search_result">No state found with search \'%s\'</string>
+</resources>

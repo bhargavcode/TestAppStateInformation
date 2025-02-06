@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/pbStates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLabelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/state_name"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintTop_toTopOf="@+id/tvLabelName"
+            app:layout_constraintStart_toEndOf="@+id/tvLabelName"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLabelName"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLabelStateOverAllPopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelName"
+            android:text="@string/state_over_all_population"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvStateOverAllPopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:padding="12dp"
+            app:layout_constraintTop_toTopOf="@+id/tvLabelStateOverAllPopulation"
+            app:layout_constraintStart_toEndOf="@+id/tvLabelStateOverAllPopulation"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLabelStateOverAllPopulation"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLabelNumberOfCounties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelStateOverAllPopulation"
+            android:text="@string/number_of_counties"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNumberOfCounties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintTop_toTopOf="@+id/tvLabelNumberOfCounties"
+            app:layout_constraintStart_toEndOf="@+id/tvLabelNumberOfCounties"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLabelNumberOfCounties"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLabelNameOfCounties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelNumberOfCounties"
+            android:text="@string/number_of_counties"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNameOfCounties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelNameOfCounties"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
